@@ -1,0 +1,111 @@
+/**
+Palette: https://scrimba.com/links/hometown-palette
+--tea-green: #ccd5aeff;
+--beige: #e9edc9ff;
+--cornsilk: #fefae0ff;
+--papaya-whip: #faedcdff;
+--light-bronze: #d4a373ff;
+
+Use different google font
+use hover
+add another section
+make it about your town, country, somewhere you like etc
+
+*/
+
+
+body {
+    color: #3D4127;
+    text-align: center;
+    font-family: "Kaushan Script", cursive;
+    text-shadow: 0 0 1px black;
+}
+.hero {
+    
+    background-image: url("images/destination-gallery-auckland-1.jpg");
+    background-position: 0px -200px; 
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    padding-top: 50px;
+}
+.activities {
+    padding-top: 10px;
+    background-color: #BAC095;
+    padding-bottom: 20px;
+
+}
+.img-act {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.img-act img {
+    height: 350px;
+    width: 350px;
+    object-fit: cover;
+    object-position: center;
+    border: 3px solid #3D4127;
+    border-radius: 20px;
+}
+
+.fade-container {
+    position: relative;
+    width: 360px; /* Adjust the size to fit your needs */
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.fade-text {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 2px 2px 2px white;
+    font-style: bold;
+    
+    /* 3. Hide the text by default */
+    opacity: 0;
+    visibility: hidden;
+    
+    /* 4. Smoothly animate the fade effect */
+    transition: opacity 0.4s ease, visibility 0.4s ease;
+}
+.fade-container:hover .fade-text {
+    opacity: 1;
+    visibility: visible;
+}
+
+.guide-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background-color:  #D4DE95;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    
+
+}
+.guide-container img {
+    width: 150px;
+    height: auto;
+    border-radius: 8px;
+    border: 3px solid #3D4127;
+    border-radius: 20px;
+}
+
+.guide {
+    border: 3px solid #3D4127;
+    border-radius: 20px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
